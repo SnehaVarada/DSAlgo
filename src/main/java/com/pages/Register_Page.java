@@ -29,7 +29,8 @@ public class Register_Page extends Base_Page {
 	@FindBy(xpath="//div[@class='alert alert-primary']")
 	WebElement alrtmsg;
 	
-
+	 @FindBy(xpath="//a[@href='/logout']")
+	 WebElement sgnot;
 	
 	
 	
@@ -56,6 +57,12 @@ public class Register_Page extends Base_Page {
 		String sm = alrtmsg.getText();
 		System.out.println(sm);
 	}
+  
+	public void signout()
+	  {
+	  	  sgnot.click();
+	  	  }
+
 
 	
 

@@ -4,15 +4,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Signin_Page extends Base_Page {
+public class SignIn_Page extends Base_Page {
 
-	public Signin_Page(WebDriver driver)
+	public SignIn_Page(WebDriver driver)
 	{
 		super(driver);
 	}
 	
 	
-	@FindBy(partialLinkText = "Sign in")  WebElement sign;
+	@FindBy(partialLinkText ="Sign in")  WebElement sign;
 	@FindBy(xpath = "//input[@name='username']") WebElement usrnme;
 	@FindBy(xpath="//input[@name='password']") WebElement lstnme;
 	@FindBy(xpath="//input[@type='submit']") WebElement lgn;

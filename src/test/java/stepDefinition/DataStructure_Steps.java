@@ -22,15 +22,17 @@ public class DataStructure_Steps {
 	}
 
 	@When("User clicks data structure {string} button")
-	public void user_clicks_data_structure_button(String string) {
-	   dsp.DSstart();
+	public void user_clicks_data_structure_button(String string) throws InterruptedException {
+	  Thread.sleep(2000);
+		dsp.DSstart();
 	}
 
 	@Then("User launches data structure page")
-	public void user_launches_data_structure_page() {
+	public void user_launches_data_structure_page() throws InterruptedException {
+		Thread.sleep(2000);
 		String expected=Launch_Browser.driver.getTitle();
 		  System.out.println(expected);
 		  Assert.assertEquals(expected, "Data Structures-Introduction"); 
-	  
+	    // dsp.signout();
 	}
 }

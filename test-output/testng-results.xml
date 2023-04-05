@@ -1,56 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-03T19:15:49 EDT" name="Default suite" finished-at="2023-04-03T19:16:31 EDT" duration-ms="42026">
+  <suite started-at="2023-04-05T00:57:29 EDT" name="Default suite" finished-at="2023-04-05T00:58:13 EDT" duration-ms="43983">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@2a4fb17b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@128d2484]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-04-03T19:15:49 EDT" name="Default test" finished-at="2023-04-03T19:16:31 EDT" duration-ms="42026">
+    <test started-at="2023-04-05T00:57:29 EDT" name="Default test" finished-at="2023-04-05T00:58:13 EDT" duration-ms="43983">
       <class name="runner1.DsAlgoRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner1.DsAlgoRunner@2a4fb17b]" started-at="2023-04-03T19:15:49 EDT" name="setUpClass" finished-at="2023-04-03T19:15:50 EDT" duration-ms="750" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner1.DsAlgoRunner@128d2484]" started-at="2023-04-05T00:57:29 EDT" name="setUpClass" finished-at="2023-04-05T00:57:30 EDT" duration-ms="747" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@19002b34]]>
+                <![CDATA[org.testng.TestRunner@5ab63a04]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@2a4fb17b]" started-at="2023-04-03T19:15:50 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-03T19:15:54 EDT" duration-ms="3879" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User navigates to DataStructure module"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DataStructure module"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.junit.ComparisonFailure">
-            <message>
-              <![CDATA[expected:<[NumpyNinja]> but was:<[Data Structures-Introduction]>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.junit.ComparisonFailure: expected:<[NumpyNinja]> but was:<[Data Structures-Introduction]>
-at org.junit.Assert.assertEquals(Assert.java:117)
-at org.junit.Assert.assertEquals(Assert.java:146)
-at stepDefinition.DataStructure_Steps.user_launches_data_structure_page(DataStructure_Steps.java:33)
-at ✽.User launches data structure page(file:///C:/Users/saisn/eclipse-workspace/DsAlgo/src/test/resources/FeatureFiles/DataStructure.feature:25)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.junit.ComparisonFailure -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@2a4fb17b]" started-at="2023-04-03T19:15:54 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-03T19:16:03 EDT" duration-ms="9178" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@128d2484]" started-at="2023-04-05T00:57:30 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-05T00:57:43 EDT" duration-ms="13211" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,23 +37,7 @@ at ✽.User launches data structure page(file:///C:/Users/saisn/eclipse-workspac
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@2a4fb17b]" started-at="2023-04-03T19:16:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-03T19:16:03 EDT" duration-ms="10" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[""]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@2a4fb17b]" started-at="2023-04-03T19:16:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-03T19:16:08 EDT" duration-ms="4491" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@128d2484]" started-at="2023-04-05T00:57:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-05T00:57:47 EDT" duration-ms="4460" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,7 +53,7 @@ at ✽.User launches data structure page(file:///C:/Users/saisn/eclipse-workspac
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@2a4fb17b]" started-at="2023-04-03T19:16:08 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-03T19:16:12 EDT" duration-ms="4445" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@128d2484]" started-at="2023-04-05T00:57:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-05T00:57:52 EDT" duration-ms="4400" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,7 +69,7 @@ at ✽.User launches data structure page(file:///C:/Users/saisn/eclipse-workspac
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@2a4fb17b]" started-at="2023-04-03T19:16:12 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-03T19:16:16 EDT" duration-ms="4416" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@128d2484]" started-at="2023-04-05T00:57:52 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-05T00:57:56 EDT" duration-ms="4453" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -130,7 +85,7 @@ at ✽.User launches data structure page(file:///C:/Users/saisn/eclipse-workspac
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@2a4fb17b]" started-at="2023-04-03T19:16:16 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-03T19:16:21 EDT" duration-ms="4522" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@128d2484]" started-at="2023-04-05T00:57:56 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-05T00:58:03 EDT" duration-ms="6919" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,7 +101,7 @@ at ✽.User launches data structure page(file:///C:/Users/saisn/eclipse-workspac
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@2a4fb17b]" started-at="2023-04-03T19:16:21 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-03T19:16:31 EDT" duration-ms="10229" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@128d2484]" started-at="2023-04-05T00:58:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-05T00:58:08 EDT" duration-ms="5191" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -159,55 +114,26 @@ at ✽.User launches data structure page(file:///C:/Users/saisn/eclipse-workspac
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"partial link text","selector":"Sign in"}
-  (Session info: chrome=111.0.5563.147)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [877c0da150d37db6d932917d6bbca89a, findElement {using=partial link text, value=Sign in}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\saisn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58556/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 877c0da150d37db6d932917d6bbca89a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"partial link text","selector":"Sign in"}
-  (Session info: chrome=111.0.5563.147)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [877c0da150d37db6d932917d6bbca89a, findElement {using=partial link text, value=Sign in}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\saisn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58556/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 877c0da150d37db6d932917d6bbca89a
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy41.click(Unknown Source)
-at com.pages.Signin_Page.signin(Signin_Page.java:26)
-at stepDefinition.Signin_Step.user_enters_valid_and(Signin_Step.java:25)
-at ✽.user enters valid "Numpysdet84" and "sdet84batch"(file:///C:/Users/saisn/eclipse-workspace/DsAlgo/src/test/resources/FeatureFiles/SignIn.feature:24)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner1.DsAlgoRunner@2a4fb17b]" started-at="2023-04-03T19:16:31 EDT" name="tearDownClass" finished-at="2023-04-03T19:16:31 EDT" duration-ms="42" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner1.DsAlgoRunner@128d2484]" started-at="2023-04-05T00:58:08 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-05T00:58:13 EDT" duration-ms="4467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User navigates to DataStructure module"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DataStructure module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner1.DsAlgoRunner@128d2484]" started-at="2023-04-05T00:58:13 EDT" name="tearDownClass" finished-at="2023-04-05T00:58:13 EDT" duration-ms="52" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

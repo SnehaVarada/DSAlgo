@@ -16,20 +16,11 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-Feature: sign up page
+@tag
+Feature: DataStructure module
 
-  Background: user is launching the DsAlgo portal
-    Given DsAlgo Portal link
-    When user clicks the get start button
-    Then user navigated to signup page
-
-  @positive
-  Scenario Outline: Register for new user
-    Given user clicks cn Register link
-    When user enters the valid "<UserName>" "<Password>" and "<ConfirmPassword>"
-    And user clicks on Register button
-    Then user navigated to NumpyNinja Home page
-
-    Examples: 
-      | UserName        | Password    | ConfirmPassword |
-      | srs110@yopmail.com | numpyninja1 | numpyninja1     |
+  Scenario: User navigates to DataStructure module
+    Given User is on  data structure module
+    When User clicks data structure "get start" button
+    Then User launches data structure page
+    

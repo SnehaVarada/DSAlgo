@@ -69,11 +69,13 @@
   }
   
   @Then("user navigated to NumpyNinja Home page")
-  public void user_navigated_to_numpy_ninja_home_page() 
+  public void user_navigated_to_numpy_ninja_home_page() throws InterruptedException 
   {
+	  Thread.sleep(2000);
   String expected=Launch_Browser.driver.getTitle();
   System.out.println(expected);
   Assert.assertEquals(expected, "NumpyNinja"); 
+  r.signout();
   }
   
  }

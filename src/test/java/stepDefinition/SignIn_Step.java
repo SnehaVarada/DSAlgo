@@ -2,7 +2,7 @@ package stepDefinition;
 
 import org.openqa.selenium.WebDriver;
 
-import com.pages.Signin_Page;
+import com.pages.SignIn_Page;
 import com.qa.factory.Launch_Browser;
 import com.qa.util.ConfigReader;
 
@@ -10,10 +10,10 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Signin_Step {
+public class SignIn_Step {
 	
 		WebDriver driver  =Launch_Browser.launch_browser();
-		Signin_Page si=new Signin_Page(Launch_Browser.driver);
+		SignIn_Page si=new SignIn_Page(Launch_Browser.driver);
 		
 		@Given("user clicks on signIn page")
 		public void user_clicks_on_sign_in_page() {
@@ -28,13 +28,15 @@ public class Signin_Step {
 		   }
 
 		@When("user clicks on login button")
-		public void user_clicks_on_login_button() {
+		public void user_clicks_on_login_button() throws InterruptedException {
+			Thread.sleep(2000);
 			si.login();
 			}
 
 		@Then("user navigated to home page")
-		public void user_navigated_to_home_page() {
+		public void user_navigated_to_home_page() throws InterruptedException {
+			Thread.sleep(2000);
 			si.alertmessage();
-			   si.signOut();
+			  // si.signOut();
 			   }
 }

@@ -2,6 +2,7 @@ package stepDefinition;
 
 import java.io.IOException;
 
+import org.junit.Assert;
 //import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 //import org.testng.Assert;
@@ -37,11 +38,10 @@ public class Portal_Step
 	@Then("user navigated to signup page")
 	public void user_navigated_to_signup_page() 
 	{
-		
-		/*
-		 * String title=ConfigReader.driver.getTitle();
-		 * Assert.assertEquals(title,"NumpyNinja"); System.out.println(title);
-		 */
+		 String title = Launch_Browser.driver.getTitle();
+		  Assert.assertEquals(title,"NumpyNinja");
+		  System.out.println(title);
+		 
 	}
 
 

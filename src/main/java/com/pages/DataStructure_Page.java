@@ -20,7 +20,7 @@ public class DataStructure_Page extends Base_Page{
   @FindBy(linkText="Time Complexity") WebElement DSTMCmp;
   @FindBy(xpath="//div[@class='CodeMirror cm-s-default']") WebElement Txtbx;
   @FindBy(xpath="//button[@type='button']") WebElement Rn;
-  
+ 
   public void DSstart()
   {
 	  started.click();
@@ -40,9 +40,9 @@ public class DataStructure_Page extends Base_Page{
 	//  Txtbx.sendKeys("print("Hello")");
   }
   public void Run()
-{
+    {
 	  Rn.click();
 	  }
-
+ 
 
 }

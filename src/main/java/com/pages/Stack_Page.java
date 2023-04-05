@@ -19,27 +19,54 @@ public class Stack_Page extends Base_Page{
 	WebElement stckimpli;
 	@FindBy (xpath = "//a[@href='stack-applications']")
 	WebElement stckapp;
-	@FindBy ()
-	WebElement 
-	@FindBy ()
-	WebElement 
-	@FindBy ()
-	WebElement 
-	
+	@FindBy (xpath = "//a[text()='Operations in Stack']")
+	WebElement oprtn;
+	@FindBy (xpath ="//a[@href='/stack/implementation/']")
+	WebElement implmntn; 
+	@FindBy (xpath ="//a[@href='/stack/stack-applications/']")
+	WebElement applctn;
 	@FindBy (xpath = "//div[@class='CodeMirror cm-s-default']")
-	WebElement  StkTxtBx;
+	WebElement  TxtBx;
+	@FindBy (xpath = "//a[@class='btn btn-info']")
+	WebElement tryhr;  // same for application and implimentation
+	@FindBy (xpath ="//button[@type='button']")
+	WebElement rn;
 	
 	public void StackGetStart()
 	{
 		stackstrt.click();
 	}
-	public void StackOperation(){
+	public void StackOperation()
+	{
 	stckoper.click();
 	}
-	public void StackImplimentation() {
+	public void StackImplimentation() 
+	{
 		stckimpli.click();
 	}
-	public void StackApplication() {
+	public void StackApplication() 
+	{
 		stckapp.click();
 	}
+	public void operation()
+	{
+		oprtn.click();
+	}
+	public void implementation()
+	{
+	implmntn.click();
+	}
+	public void application()
+	{
+		applctn.click();
+	}
+	public void TextBox() 
+	{
+	TxtBx.getText();
+    }
+	public void run() 
+	{
+	rn.click();
+	}
+	
 }
