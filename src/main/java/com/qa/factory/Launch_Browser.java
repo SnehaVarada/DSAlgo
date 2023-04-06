@@ -19,8 +19,7 @@ public class Launch_Browser {
 	
 	private Launch_Browser()
 	{
-		
-	}
+		}
 	
 	public static WebDriver launch_browser()
 	{

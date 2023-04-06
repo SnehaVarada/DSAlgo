@@ -13,6 +13,7 @@ glue={"stepDefinition"})
 
 
 
-public class DsAlgoRunner extends AbstractTestNGCucumberTests{
+public class DsAlgoRunner extends AbstractTestNGCucumberTests
+{
 
 }

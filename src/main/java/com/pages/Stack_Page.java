@@ -11,7 +11,7 @@ public class Stack_Page extends Base_Page{
 	{
 		super(driver);
 	}
-	@FindBy (xpath = "//a[@class='align-self-end btn btn-lg btn-block btn-primary']")
+	@FindBy (xpath = "//a[@href='stack']")
 	WebElement stackstrt;
 	@FindBy (xpath ="//a[@href='operations-in-stack']")
 	WebElement stckoper;
@@ -25,10 +25,10 @@ public class Stack_Page extends Base_Page{
 	WebElement implmntn; 
 	@FindBy (xpath ="//a[@href='/stack/stack-applications/']")
 	WebElement applctn;
-	@FindBy (xpath = "//div[@class='CodeMirror cm-s-default']")
+	@FindBy (xpath = "//form/div/div/div/textarea")
 	WebElement  TxtBx;
 	@FindBy (xpath = "//a[@class='btn btn-info']")
-	WebElement tryhr;  // same for application and implimentation
+	WebElement tryhr;  // same for application and implementation
 	@FindBy (xpath ="//button[@type='button']")
 	WebElement rn;
 	

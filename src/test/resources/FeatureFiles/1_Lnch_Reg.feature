@@ -30,8 +30,6 @@ Feature: Register page
     Given user clicks Array get start button without signingIn
     Then displays array error message
 
-  
-
   @Negative
   Scenario Outline: Registeration for new user with invalid data
     Given User clicks on register link for invalid login
@@ -53,5 +51,5 @@ Feature: Register page
     Then user navigated to NumpyNinja Home page
 
     Examples: 
-      | UserName           | Password    | ConfirmPassword |
-      | srs12@yopmail.com | numpyninja1 | numpyninja1     |
+      | UserName          | Password    | ConfirmPassword |
+      | srs14@yopmail.com | numpyninja1 | numpyninja1     |

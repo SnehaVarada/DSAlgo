@@ -8,7 +8,8 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 
-public class ConfigReader {
+public class ConfigReader 
+{
 	public static String browser_key;
 	public static Properties prop=new Properties();
 	public static FileReader fr;
@@ -16,26 +17,19 @@ public class ConfigReader {
 	
 	public static String init_Reader()
 	{
-		
 		try 
 		{
 			fr=new FileReader(config_path);
 			prop.load(fr);
 			browser_key=prop.getProperty("browser");
 			return browser_key;
-			 
-			 
-		} 
-	
-		
-		catch (IOException e) 
+			 } 
+	catch (IOException e) 
 		{
-			
-			e.printStackTrace();
+				e.printStackTrace();
 			return "chrome";
 		}
 	}
-		
 		public static String launch_Web(String url)
 		{
 		 return prop.getProperty(url);

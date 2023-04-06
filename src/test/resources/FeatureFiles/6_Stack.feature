@@ -15,25 +15,23 @@
 #<> (placeholder)
 #""
 ## (Comments)
-#Sample Feature Definition Template
 @tag
-Feature: DataStructure module
+Feature: Stack module
 
-  Scenario: User navigates to DataStructure module
-    Given User is on  data structure module
-    When User clicks data structure get start button
-    Then User launches data structure page
+  Scenario: User navigates to Stack module
+    Given User is on stack module
+    When User clicks on stack module's get start button
+    Then User launches on stack page
 
-  @Positive @Negative
-  Scenario: user is trying to access TimeComplexity
-    Given user enters onto TimeComplexity link
-    When user clicks on TimeComplexity
-    And user launches on TimeComplexity page
-
-  @Positive
-  Scenario: user is trying to click TryHere button
+  Scenario: User navigates to operations in stack
+    Given User is on operations in stack
+    When User clicks on operations in stack button
+    Then User launches on operations in stack page
+    
+  Scenario: User Clicks TryHere
     Given user clicks on TryHere button
     And user navigated to Tryeditor page to write a Python code
     When user is writing Python code
     And user clicks on Run button
-    Then user can see the Output of Python code
+    Then user can see the Output of Python code 
+ 
