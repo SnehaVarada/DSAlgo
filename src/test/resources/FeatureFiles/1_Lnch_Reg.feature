@@ -52,4 +52,4 @@ Feature: Register page
 
     Examples: 
       | UserName          | Password    | ConfirmPassword |
-      | srs14@yopmail.com | numpyninja1 | numpyninja1     |
+      | srs33@yopmail.com | numpyninja1 | numpyninja1     |

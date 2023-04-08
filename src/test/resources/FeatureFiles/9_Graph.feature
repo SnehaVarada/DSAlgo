@@ -16,29 +16,22 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@DataStructure
-Feature: DataStructure module
+@tag
+Feature: Graph Module
 
   @positive @Negative
-  Scenario: User navigates to DataStructure module
-    Given User is on  data structure module
-    When User clicks data structure get start button
-    Then User launches data structure page
+  Scenario: User navigates to Graph module
+    Given User is on Graph module
+    When User clicks on Graph modules Get Start button
+    Then User launches on Graph page
 
-  @Positive @Negative
-  Scenario: user is trying to access TimeComplexity
-    Given user is on datasturcture introduction page
-    When user clicks on TimeComplexity
-    Then user launches on TimeComplexity page
-
-  @Positive
-  Scenario: user is trying to click TryHere button
+  @positive
+  Scenario: User Clicks TryHere
     Given user clicks on TryHere button
     And user navigated to Tryeditor page to write a Python code
     When user is writing Python code
     And user clicks on Run button
     Then user can see the Output of Python code
-   
 
   @Negative
   Scenario: user is trying to click on TryEditor for Invalid data
@@ -51,6 +44,30 @@ Feature: DataStructure module
     And user navigates back to previous page
 
   @positive
+  Scenario: User clicks on Graphs representation
+    Given User is on representation on graph
+    When User clicks on representation in graph button
+    Then User launches on representation in graph page
+
+  @positive
+  Scenario: User Clicks TryHere
+    Given user clicks on TryHere button
+    And user navigated to Tryeditor page to write a Python code
+    When user is writing Python code
+    And user clicks on Run button
+    Then user can see the Output of Python code
+
+  @Negative
+  Scenario: user is trying to click on TryEditor for Invalid data
+    Given user navigates back to click TryHere button
+    And user clicks on TryHere button
+    And user navigated to Tryeditor page to write a Python code
+    When user is entering Invalid Python code
+    And user clicks on Run button
+    Then user is capturing Alert message
+    And user navigates back to previous page
+    
+     @positive
   Scenario: user is trying to click Practice Questions
     Given user clicks on Practice Questions
     When user navigates to practice Questions

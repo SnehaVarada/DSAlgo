@@ -18,7 +18,7 @@ public class DataStructure_Page extends Base_Page{
 	  @FindBy(xpath="//form/div/div/div/textarea") WebElement Txtbx;
 	  @FindBy(xpath="//button[text()='Run']") WebElement Rn;
 	  @FindBy(xpath="//div//pre[@id='output']") WebElement output;
-	
+	  @FindBy(xpath="//a[@class='list-group-item list-group-item-light text-info']") WebElement pracque;
 /*
  * @FindBy(xpath =
  * "(//a[@class='align-self-end btn btn-lg btn-block btn-primary'])[1]")
@@ -57,6 +57,10 @@ public class DataStructure_Page extends Base_Page{
   {
 	  Txtbx.sendKeys("print('Hi')");
   }
+  public void InvalidTextBox() 
+  {
+		   Txtbx.sendKeys("Hello"); 
+  }
   public void Run()
     {
 	  Rn.click();
@@ -64,7 +68,11 @@ public class DataStructure_Page extends Base_Page{
   public void outputofpythoncd() 
   {
 	  output.getText();
-
-  }
+   }
+ 
+public void practicequestion() 
+{
+		 pracque.click();
+}
  
 }

@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class Stack_Page extends Base_Page{
 
-	
 	public Stack_Page(WebDriver driver)
 	{
 		super(driver);
